@@ -11,4 +11,6 @@ EXPOSE 53/udp
 
 VOLUME /etc/bind
 
-ENTRYPOINT ["/usr/sbin/named", "-c", "/etc/bind/named.conf", "-f"]
+ENTRYPOINT ["/usr/sbin/named", "-c", "/etc/bind/named.conf"]
+
+CMD ["-f"]
