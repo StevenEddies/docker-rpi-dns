@@ -5,7 +5,7 @@ plugins {
 version = project.findProperty("buildVersion") ?: "0.0-dev.0"
 
 docker {
-	name 'hub.docker.com/steveneddies/rpi-dns'
+	name 'steveneddies/rpi-dns'
 	dockerfile 'src/docker/Dockerfile'
 	tags ( project.version, 'latest' )
 	pull true
